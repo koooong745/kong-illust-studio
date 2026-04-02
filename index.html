@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kong</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=Outfit:wght@300;400&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --bg: #efefef; --text: #111; --muted: #999; --line: #d0d0d0; }
+  body { background: var(--bg); min-height: 100vh; font-family: 'Outfit', sans-serif; font-weight: 300; color: var(--text); display: flex; flex-direction: column; align-items: center; padding: 64px 24px 48px; }
+  .wrap { width: 100%; max-width: 420px; animation: up 0.6s ease both; }
+  @keyframes up { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  .header { display: flex; align-items: flex-start; gap: 20px; margin-bottom: 48px; }
+  .avatar { width: 64px; height: 64px; border-radius: 50%; overflow: hidden; flex-shrink: 0; background: #ccc; }
+  .avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .header-text { padding-top: 6px; }
+  .logo { height: 20px; width: auto; display: block; margin-bottom: 10px; }
+  .categories { font-size: 0.7rem; color: var(--muted); letter-spacing: 0.04em; }
+  .links { border-top: 1px solid var(--line); }
+  .link-item { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; border-bottom: 1px solid var(--line); text-decoration: none; color: var(--text); transition: color 0.15s; cursor: pointer; }
+  a.link-item:hover { color: var(--muted); }
+  .link-left { display: flex; flex-direction: column; gap: 4px; }
+  .link-label { font-size: 0.82rem; font-weight: 400; }
+  .link-sub { font-family: 'IBM Plex Mono', monospace; font-size: 0.63rem; color: var(--muted); }
+  .link-arrow { font-size: 0.85rem; color: var(--muted); }
+  .coming-soon { opacity: 0.4; cursor: default; }
+  .badge { font-family: 'IBM Plex Mono', monospace; font-size: 0.6rem; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
+  .footer { margin-top: 40px; font-family: 'IBM Plex Mono', monospace; font-size: 0.62rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header">
+    <div class="avatar"><img src="IMG_2351_1.JPG" alt="Kong"></div>
+    <div class="header-text">
+      <img src="Untitled-1.png" alt="Kong" class="logo">
+      <p class="categories">Illustration · Animation · Design</p>
+    </div>
+    <a href="mailto:koooong745@gmail.com" class="link-item">
+      <div class="link-left">
+        <span class="link-label">Business Inquiry</span>
+        <span class="link-sub">koooong745@gmail.com</span>
+      </div>
+      <span class="link-arrow">↗</span>
+    </a>
+    <div class="link-item coming-soon">
+      <div class="link-left">
+        <span class="link-label">Portfolio</span>
+        <span class="link-sub">준비 중</span>
+      </div>
+      <span class="badge">Soon</span>
+    </div>
+  </div>
+  <p class="footer">© 2026 Kong Illustration Studio</p>
+</div>
+</body>
+</html>
